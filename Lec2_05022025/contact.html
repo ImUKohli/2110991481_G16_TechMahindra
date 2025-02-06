@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Utkarsh Kohli Portfolio</title>
+  <title>Contact Me</title>
 </head>
 <body>
-  <!-- This is my NavBar COmponent -->
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar-container container">
       <input type="checkbox" name="" id="">
@@ -28,25 +26,39 @@
       </ul>
       <h1 class="logo">Utkarsh Kohli</h1>
     </div>
-  
-    <!-- This is my body container -->
   </nav>
 
-  <div class="body-container">
-    <div class="myprofile-container">
-      <div class="description-container">
-        <p class="greeting">Hi,</p>
-        <p class="name">I am <strong>Utkarsh Kohli</strong></p>
-        <p class="description">I am an iOS and Web Developer passionate about crafting seamless and engaging digital experiences. With a keen eye for design and functionality, I specialize in building intuitive applications that enhance user interaction. Constantly exploring new technologies, I strive to create impactful solutions that blend innovation with efficiency.</p>
-    </div>    
-      <div class="profile-img-container">
-        <img src="UtkarshKohli-CU-Photo.jpg" alt="ChillGuy" style="height: 100%; width: 100%;">
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <h2>Contact Me</h2>
+    <p>Have a question or want to work together? Fill out the form below!</p>
 
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
       </div>
-    </div>
-  </div>
 
-  <!-- This is My Footer Conatainer  -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">
@@ -76,12 +88,6 @@
       <p>&copy; 2025 YourWebsite. All rights reserved.</p>
     </div>
   </footer>
-  
-  
 
-
-  
-  
 </body>
 </html>
-
