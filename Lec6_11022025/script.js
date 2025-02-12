@@ -125,17 +125,62 @@ console.log(count);
 //HOF Higher order function can be used as they can take Fucntion as Arguments 
 
 //Example of Higher Order Function 
-function operate(a, b, operation) {
-  return operation(a, b);
+// function operate(a, b, operation) {
+//   return operation(a, b);
+// }
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// function multiply(x, y) {
+//   return x * y;
+// }
+
+// console.log(operate(5, 3, add));       //Output is 8
+// console.log(operate(5, 3, multiply));  // Output is 15
+
+
+function counter(){
+  var count = 0;
+ 
+  this.increment=function(){
+    this.count++;
+    console.log(count);
+  }
+  this.decrement=function(){
+    this.count--;
+    console.log(count);
+  }
 }
 
-function add(x, y) {
-  return x + y;
-}
+var counter1 = new counter();
+counter1.increment();
+counter1.increment();
+counter1.decrement();
+counter1.increment();
+counter1.increment();
+counter1.decrement();
 
-function multiply(x, y) {
-  return x * y;
-}
 
-console.log(operate(5, 3, add));       //Output is 8
-console.log(operate(5, 3, multiply));  // Output is 15
+// function counter() {
+//   var count = 0;
+  
+//   return {
+//     increment: function() {
+//       count++;
+//       console.log(count);
+//     },
+//     decrement: function() {
+//       count--;
+//       console.log(count);
+//     }
+//   };
+// }
+
+// var counter1 = counter();
+// counter1.increment(); // 1
+// counter1.increment(); // 2
+// counter1.decrement(); // 1
+// counter1.increment(); // 2
+// counter1.decrement(); // 1
