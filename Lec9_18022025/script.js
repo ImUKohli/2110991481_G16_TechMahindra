@@ -172,3 +172,4 @@ const filteredFullNames = users.filter((user) => user.age <= 23)
 .map((user) => `${user.firstName} ${user.lastName}`);
 
 console.log(filteredFullNames);
+
